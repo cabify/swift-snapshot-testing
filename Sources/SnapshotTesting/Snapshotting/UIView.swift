@@ -36,9 +36,6 @@ extension Snapshotting where Value == UIView, Format == UIImage {
 
 extension Snapshotting where Value == UIView, Format == String {
   /// A snapshot strategy for comparing views based on a recursive description of their properties and hierarchies.
-  public static let recursiveDescription = Snapshotting<UIView, String>.recursiveDescription()
-
-  /// A snapshot strategy for comparing views based on a recursive description of their properties and hierarchies.
   public static func recursiveDescription(
     size: CGSize? = nil,
     traits: UITraitCollection = .init()
